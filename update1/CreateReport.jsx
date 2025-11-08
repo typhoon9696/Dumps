@@ -76,7 +76,7 @@ const CreateReport = () => {
         <Box sx={{ p: 4, maxWidth: 1400, mx: 'auto', pb: 8 }}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
             <Typography variant="h4" sx={{ fontSize: 18, fontWeight: 600, color: '#1a1a1a' }}>Create Report</Typography>
-            <Button onClick={() => navigate('/reports')} variant="outlined" sx={{ px: 3, py: 1, fontSize: 14 }}>
+            <Button onClick={() => navigate('/reports')} variant="outlined" sx={{ px: 3, py: 1, fontSize: 14, borderColor: '#4931c1', color: '#4931c1', '&:hover': { borderColor: '#3d2a9f', color: '#3d2a9f' } }}>
               Back to Reports
             </Button>
           </Box>
@@ -174,10 +174,10 @@ const CreateReport = () => {
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
               <Typography variant="h6" sx={{ fontSize: 18, fontWeight: 600, color: '#333' }}>Select Report Fields</Typography>
               <Box>
-                <Button onClick={() => setSelectedFields(allFields)} variant="outlined" sx={{ mr: 2, px: 3, fontSize: 14 }}>
+                <Button onClick={() => setSelectedFields(allFields)} variant="outlined" sx={{ mr: 2, px: 3, fontSize: 14, borderColor: '#4931c1', color: '#4931c1', '&:hover': { borderColor: '#3d2a9f', color: '#3d2a9f' } }}>
                   Select All
                 </Button>
-                <Button onClick={() => setSelectedFields(['Actions ID', 'Action Date UTC', 'Client Name', 'Amount'])} variant="outlined" sx={{ px: 3, fontSize: 14 }}>
+                <Button onClick={() => setSelectedFields(['Actions ID', 'Action Date UTC', 'Client Name', 'Amount'])} variant="outlined" sx={{ px: 3, fontSize: 14, borderColor: '#4931c1', color: '#4931c1', '&:hover': { borderColor: '#3d2a9f', color: '#3d2a9f' } }}>
                   Reset to Defaults
                 </Button>
               </Box>
@@ -202,6 +202,7 @@ const CreateReport = () => {
                       checked={selectedFields.includes(field)}
                       onChange={() => handleFieldToggle(field)}
                       size="small"
+                      sx={{ color: '#4931c1', '&.Mui-checked': { color: '#4931c1' } }}
                     />
                   }
                   label={<Typography sx={{ fontSize: 14, fontWeight: 500 }}>{field}</Typography>}
@@ -211,7 +212,7 @@ const CreateReport = () => {
             </Box>
 
             <Box sx={{ mt: 4, display: 'flex', justifyContent: 'flex-end', gap: 3 }}>
-              <Button onClick={() => navigate('/reports')} variant="outlined" sx={{ px: 4, py: 1.5, fontSize: 14 }}>
+              <Button onClick={() => navigate('/reports')} variant="outlined" sx={{ px: 4, py: 1.5, fontSize: 14, borderColor: '#4931c1', color: '#4931c1', '&:hover': { borderColor: '#3d2a9f', color: '#3d2a9f' } }}>
                 Cancel
               </Button>
               <Button 
