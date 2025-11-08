@@ -17,3 +17,4 @@ updates 8/11
 \src\features\configurations\mocks\configMock.js
 \src\features\configurations\hooks\useConfig.jsx
 \src\features\configurations\Configurations.jsx
+src\pages\CreateReport.jsx
